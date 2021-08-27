@@ -1,0 +1,27 @@
+@import './globalCSS/viewPortSizes.scss';
+@import './globalCSS/globalColors.scss';
+@import './globalCSS/fonts.scss';
+
+body {
+    background-color: $mainBackgroundColor;
+}
+
+div,
+header {
+    display: grid;
+}
+
+button {
+    border: none;
+    display: block;
+    padding: 0;
+}
+
+.wrapper {
+    height: 100vh;
+    min-width: 250px;
+    grid-template-rows: min-content minmax(200px, auto) 150px 30px 30px;
+}
+.social {
+    background-color: lightcoral;
+}

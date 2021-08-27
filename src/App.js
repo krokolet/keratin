@@ -1,15 +1,18 @@
 import './App.scss';
+import './components/Header/Header';
+import Header from './components/Header/Header';
+import Slider from './components/Slider/Slider';
+import PriceBox from './components/PriceBox/PriceBox';
+import Record from './components/Record/Record';
 
 function App() {
     return (
         <div className="wrapper">
-            <header className="header">
-                <div className="logo" />
-                <div className=""></div>
-                <div className="menu">
-                    <button className="menu__burger" />
-                </div>
-            </header>
+            <Header />
+            <Slider />
+            <PriceBox />
+            <Record />
+            <div className="social" />
         </div>
     );
 }
