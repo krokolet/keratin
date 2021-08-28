@@ -1,0 +1,24 @@
+@import './../../globalCSS/mixins.scss';
+
+.socialBox {
+    @include centered_items;
+    align-items: end;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+.icon--Instagram {
+    background: url('./../../img/icons/instagram.svg') center/contain no-repeat;
+}
+
+.icon--VK {
+    background: url('./../../img/icons/vk.svg') center/contain no-repeat;
+}
+
+.icon--OK {
+    background: url('./../../img/icons/ok.svg') center / contain no-repeat;
+}
