@@ -5,9 +5,9 @@ import './socialBox.scss';
 const SocialBox = () => {
     return (
         <div className="socialBox">
-            <a className="icon icon--Instagram" />
-            <a className="icon icon--VK"></a>
-            <a className="icon icon--OK"></a>
+            <span className="icon icon--Instagram" />
+            <span className="icon icon--VK" />
+            <span className="icon icon--OK" />
         </div>
     );
 };
