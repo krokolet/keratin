@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import Slider from './components/Slider/Slider';
 import PriceBox from './components/PriceBox/PriceBox';
 import Record from './components/RecordBtn/RecordBtn';
-import SocialBox from './components/SocialBox/SocialBox';
+
 
 function App() {
     let vh = window.innerHeight * 0.01;
