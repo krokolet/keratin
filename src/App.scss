@@ -16,9 +16,6 @@ button {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     min-width: 250px;
-    grid-template-rows: min-content minmax(200px, auto) 150px 30px 30px;
+    grid-template-rows: min-content minmax(200px, auto) 170px 40px;
     background-color: $mainBackgroundColor;
-}
-.social {
-    background-color: lightcoral;
 }

@@ -3,7 +3,7 @@ import './components/Header/Header';
 import Header from './components/Header/Header';
 import Slider from './components/Slider/Slider';
 import PriceBox from './components/PriceBox/PriceBox';
-import Record from './components/Record/Record';
+import Record from './components/RecordBtn/RecordBtn';
 import SocialBox from './components/SocialBox/SocialBox';
 
 function App() {
@@ -14,14 +14,13 @@ function App() {
         document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
     return (
-        <div className="wrapper">
-            <Header />
-            <Slider />
-            <PriceBox />
-            <Record />
-            <SocialBox />
-        </div>
-    );
+		<div className="wrapper">
+			<Header />
+			<Slider />
+			<PriceBox />
+			<Record />
+		</div>
+	);
 }
 
 export default App;
