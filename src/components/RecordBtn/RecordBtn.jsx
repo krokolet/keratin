@@ -1,9 +1,17 @@
 import React from 'react';
-
 import './recordBtn.scss';
 
-const Record = () => {
-	return <button className="recordBtn">Записаться</button>;
+const RecordBtn = ({ setIsModalVisible }) => {
+	return (
+		<>
+			<button
+				className="recordBtn"
+				onClick={() => setIsModalVisible(true)}
+			>
+				Записаться
+			</button>
+		</>
+	);
 };
 
-export default Record;
+export default RecordBtn;
