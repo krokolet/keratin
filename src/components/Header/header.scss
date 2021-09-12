@@ -4,15 +4,14 @@
 .header {
     background-color: inherit;
     padding: 0.5rem;
-    grid-template-rows: 1fr 1fr;
     grid-template-columns: 50px auto 50px;
-}
 
-// .logo {
-//     height: 100%;
-//     width: 100%;
-//     background: url('./../../img/Keratin_title.png') no-repeat center / contain;
-// }
+    &__phone {
+        @include centered_items;
+        grid-column: 1/-1;
+        font-size: 0.8rem;
+    }
+}
 
 .menu,
 .town,
@@ -28,12 +27,13 @@
     font-family: 'Camfortaa', 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 700;
+    margin: 0;
 }
 
 .town {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
         sans-serif;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
 }
 
 .master {

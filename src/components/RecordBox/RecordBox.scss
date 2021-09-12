@@ -1,0 +1,48 @@
+@mixin icon {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+    position: relative;
+    left: -5px;
+}
+
+.ant-modal-wrap {
+    overflow: hidden;
+}
+
+.contact-text {
+    font-family: 'Camfortaa', 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+}
+
+.phone,
+.whatsapp,
+.telegram {
+    padding-left: 20px;
+}
+
+.phone {
+    &__number::before {
+        @include icon;
+        content: '';
+        background: url('../../img/icons/phone.svg') no-repeat center/contain;
+    }
+}
+
+.whatsapp {
+    &__number::before {
+        @include icon;
+        content: '';
+        background: url('../../img/icons/whatsapp.png') no-repeat center/contain;
+    }
+}
+
+.telegram {
+    &__number::before {
+        @include icon;
+        content: '';
+        background: url('../../img/icons/telegram.png') no-repeat center/contain;
+    }
+}

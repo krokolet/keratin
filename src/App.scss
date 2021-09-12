@@ -2,9 +2,7 @@
 @import './globalCSS/globalColors.scss';
 @import './globalCSS/fonts.scss';
 
-
-div,
-header {
+.grid {
     display: grid;
 }
 

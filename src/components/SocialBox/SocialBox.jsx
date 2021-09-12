@@ -4,7 +4,7 @@ import './socialBox.scss';
 
 const SocialBox = () => {
     return (
-        <div className="socialBox">
+        <div className="socialBox grid">
             <span className="icon icon--Instagram" />
             <span className="icon icon--VK" />
             <span className="icon icon--OK" />

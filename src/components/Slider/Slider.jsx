@@ -4,11 +4,11 @@ import './slider.scss';
 
 const Slider = () => {
     return (
-        <div className="slider">
-            <div className="textBackdrop">
+        <div className="slider grid">
+            <div className="textBackdrop grid">
                 <span className="slider__text">
                     Здоровые и красивые волосы с применением современных
-                    технологий!
+                    технологий !
                 </span>
             </div>
         </div>
