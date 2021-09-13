@@ -41,13 +41,13 @@ const RecordBox = ({ isVisible, setIsVisible }) => {
                 </p>
                 <div>- или -</div>
                 <section>
-                    <a>
+                    <a href="" >
                         <span className="odnoklassniki social"></span>
                     </a>
-                    <a>
+                    <a href="" >
                         <span className="vkontakte social"></span>
                     </a>
-                    <a>
+                    <a href="" >
                         <span className="instagram social"></span>
                     </a>
                 </section>
