@@ -14,11 +14,14 @@ const Header = () => {
                 <div className="town">г.Анжеро-Судженск</div>
             </div>
             <span className="master">Мастер: Татьяна Шадрина</span>
-            <span className="header__phone phone__number">
+            <a
+                className="header__phone phone__number"
+                href={`tel:${telephone}`}
+            >
                 <em>
                     <b>{telephone}</b>
                 </em>
-            </span>
+            </a>
         </header>
     );
 };

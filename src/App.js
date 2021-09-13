@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import './App.scss';
 import 'antd/dist/antd.css';
+import { Spin } from 'antd';
 
 import Header from './components/Header/Header';
 import Slider from './components/Slider/Slider';
@@ -17,8 +18,14 @@ function App() {
         document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
 
+    const [isReady, setReady] = useState(false);
     const [isModalVisible, setIsModalVisible] = useState(false);
-    return (
+
+    window.addEventListener('load', () => setReady(true));
+
+    return !isReady ? (
+        <Spin />
+    ) : (
         <div className="wrapper grid">
             <Header />
             <Slider />
