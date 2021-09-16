@@ -45,16 +45,16 @@ const RecordBox = ({ isVisible, setIsVisible }) => {
 						<span className="telegram__text">Telegram</span>
 					</a>
 				</p>
-				<div>- или -</div>
-				<section>
-					<a href={`https://${odnoklassniki}`}>
+
+				<section className="social-box">
+					<a href={`https://${odnoklassniki}`} className="socialLink">
 						<span className="odnoklassniki social"></span>
 					</a>
-					<a href={`https://${vkontakte}`}>
+					<a href={`https://${vkontakte}`} className="socialLink">
 						<span className="vkontakte social"></span>
 					</a>
-                    <a href={`https://${instagram}`}>
-                        <span className="instagram social"></span>
+					<a href={`https://${instagram}`} className="socialLink">
+						<span className="instagram social"></span>
 					</a>
 				</section>
 			</nav>
